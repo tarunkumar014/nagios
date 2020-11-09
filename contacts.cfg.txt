@@ -2,17 +2,36 @@ define contact {
 
     contact_name            nagiosadmin             ; Short name of user
     use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
-    alias                   devops02           ; Full name of user
-    email                   tarun@lsnsoft.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+    alias                   Teja Venkatesh Duggirala            ; Full name of user
+    email                   tejad@lsnsoft.in ; <<**** CHANGE THIS TO YOUR EMAIL ADDRESS *****
 }
 
 define contact {
 
-    contact_name            devops01             ; Short name of user
+    contact_name            vijay             ; Short name of user
     use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
-    alias                   devops01        ; Full name of user
-    email                   tarunkumarlsn@gmail.com; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+    alias                   Vijay Masina            ; Full name of user
+    email                   vmasina@lsnsoft.com ; <<**** CHANGE THIS TO YOUR EMAIL ADDRESS *****
 }
+
+define contact {
+
+    contact_name            siva             ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   Siva Prasad Masina            ; Full name of user
+    email                   prasad.m@lsnsoft.com ; <<**** CHANGE THIS TO YOUR EMAIL ADDRESS *****
+}
+
+
+define contact {
+
+    contact_name            tarun         ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   tarun kumar         ; Full name of user
+    email                   tarun@lsnsoft.com; <<**** CHANGE THIS TO YOUR EMAIL ADDRESS *****
+}
+
+
 
 
 
@@ -29,14 +48,5 @@ define contactgroup {
 
     contactgroup_name       admins
     alias                   Nagios Administrators
-    members                 nagiosadmin
+    members                 nagiosadmin,vijay,siva,tarun
 }
-
-define contactgroup {
-
-    contactgroup_name       admins01
-    alias                   Nagios Administrators
-    members                 devops01,nagiosadmin
-}
-
-
