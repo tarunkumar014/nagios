@@ -38,124 +38,18 @@ define contactgroup {
 
     contactgroup_name       admins
     alias                   Nagios Administrators
-    members                  devops01   
+    members                 sivaprasad  
 }
 
 define contactgroup {
 
-    contactgroup_name       admins
+    contactgroup_name       devopsadmin02
     alias                   Nagios Administrators
     members                 devops02    
 }
 define contactgroup {
 
-    contactgroup_name       admins
+    contactgroup_name       devopsadmin01
     alias                   Nagios Administrators
-    members                 sivaprasad   
+    members                 devops01
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-define contactgroup {
-        contactgroup_name       admins
-        alias   Nagios Administrators
-        members nagiosadmin
-        }
-
-define contactgroup {
-        contactgroup_name       bbadmin
-        alias   Blackboard Administrators
-        members jtate,jwells,rcarter,amcintyre
-        }
-
-define contactgroup {
-        contactgroup_name       bbtransactadmin
-        alias   Blackboard Administrators
-        members jtate,jwells,rcarter,amcintyre
-        }
-
-define contactgroup {
-        contactgroup_name       colleagueadmin
-        alias   Colleague Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       doceserveeadmin
-        alias   Doc-e-Serve Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       ellucianmobileadmin
-        alias   Ellucian Mobile Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       informeradmin
-        alias   Informer Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       kourieradmin
-        alias   Kourier Administrators
-        members amcintyre,jwells,rcarter,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       kronosadmin
-        alias   Kronos Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       onbaseadmin
-        alias   Onbase Administrators
-        members jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       portaladmin
-        alias   Portal Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       recruiteradmin
-        alias   Recruiter Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
-
-define contactgroup {
-        contactgroup_name       webiadmin
-        alias   Webi Administrators
-        members rcarter,jwells,joshtate2001,jtate
-        }
