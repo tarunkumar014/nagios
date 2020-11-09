@@ -1,27 +1,18 @@
-# 'generic-contact' template which is defined elsewhere.
+define contact {
+
+    contact_name            nagiosadmin             ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   devops02           ; Full name of user
+    email                   tarun@lsnsoft.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+}
 
 define contact {
 
-    contact_name            devops01           ; Short name of user
+    contact_name            devops01             ; Short name of user
     use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
-    alias                   tejad         ; Full name of user
-    email                   tejad@lsnsoft.in ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+    alias                   devops01        ; Full name of user
+    email                   tarunkumarlsn@gmail.com; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
 }
-define contact {
-
-    contact_name            devops02         ; Short name of user
-    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
-    alias                   tarun kumar           ; Full name of user
-    email                   tarunkumarlsn@gmail.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
-}
-define contact {
-
-    contact_name            sivaprasad           ; Short name of user
-    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
-    alias                   prasd masina          ; Full name of user
-    email                   prasad.m@lsnsoft.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
-}
-
 
 
 
@@ -38,18 +29,14 @@ define contactgroup {
 
     contactgroup_name       admins
     alias                   Nagios Administrators
-    members                 sivaprasad  
+    members                 nagiosadmin
 }
 
 define contactgroup {
 
-    contactgroup_name       devopsadmin02
+    contactgroup_name       admins01
     alias                   Nagios Administrators
-    members                 devops02    
+    members                 devops01,nagiosadmin
 }
-define contactgroup {
 
-    contactgroup_name       devopsadmin01
-    alias                   Nagios Administrators
-    members                 devops01
-}
+
