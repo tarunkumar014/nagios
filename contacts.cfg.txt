@@ -1,0 +1,161 @@
+# 'generic-contact' template which is defined elsewhere.
+
+define contact {
+
+    contact_name            devops01           ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   tejad         ; Full name of user
+    email                   tejad@lsnsoft.in ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+}
+define contact {
+
+    contact_name            devops02         ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   tarun kumar           ; Full name of user
+    email                   tarunkumarlsn@gmail.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+}
+define contact {
+
+    contact_name            sivaprasad           ; Short name of user
+    use                     generic-contact         ; Inherit default values from generic-contact template (defined above)
+    alias                   prasd masina          ; Full name of user
+    email                   prasad.m@lsnsoft.com ; <<***** CHANGE THIS TO YOUR EMAIL ADDRESS ******
+}
+
+
+
+
+###############################################################################
+#
+# CONTACT GROUPS
+#
+###############################################################################
+
+# We only have one contact in this simple configuration file, so there is
+# no need to create more than one contact group.
+
+define contactgroup {
+
+    contactgroup_name       admins
+    alias                   Nagios Administrators
+    members                  devops01   
+}
+
+define contactgroup {
+
+    contactgroup_name       admins
+    alias                   Nagios Administrators
+    members                 devops02    
+}
+define contactgroup {
+
+    contactgroup_name       admins
+    alias                   Nagios Administrators
+    members                 sivaprasad   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+define contactgroup {
+        contactgroup_name       admins
+        alias   Nagios Administrators
+        members nagiosadmin
+        }
+
+define contactgroup {
+        contactgroup_name       bbadmin
+        alias   Blackboard Administrators
+        members jtate,jwells,rcarter,amcintyre
+        }
+
+define contactgroup {
+        contactgroup_name       bbtransactadmin
+        alias   Blackboard Administrators
+        members jtate,jwells,rcarter,amcintyre
+        }
+
+define contactgroup {
+        contactgroup_name       colleagueadmin
+        alias   Colleague Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       doceserveeadmin
+        alias   Doc-e-Serve Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       ellucianmobileadmin
+        alias   Ellucian Mobile Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       informeradmin
+        alias   Informer Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       kourieradmin
+        alias   Kourier Administrators
+        members amcintyre,jwells,rcarter,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       kronosadmin
+        alias   Kronos Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       onbaseadmin
+        alias   Onbase Administrators
+        members jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       portaladmin
+        alias   Portal Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       recruiteradmin
+        alias   Recruiter Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
+
+define contactgroup {
+        contactgroup_name       webiadmin
+        alias   Webi Administrators
+        members rcarter,jwells,joshtate2001,jtate
+        }
